@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>La Bella Pizza</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+      animation: fadeInBody 1s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background-color: #b22222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    header h1 {
+      margin: 10px 0 0 0;
+      font-size: 2.5em;
+    }
+
+    header img {
+      width: 120px; /* ajuste o tamanho do logo */
+      display: block;
+      margin: 0 auto 10px auto; /* centraliza e dá espaço abaixo */
+    }
+
+    nav {
+      background-color: #8b0000;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffd700;
+      transform: scale(1.1);
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    main p {
+      font-size: 1.2em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Logo inserido -->
+    <img src="../pizzaria/logo pizza.png" alt="Logo La Bella Pizza">
+    <h1>La Bella Pizza 🍕</h1>
+    <p>Bem-vindo à nossa pizzaria! Explore nossos serviços abaixo:</p>
+  </header>
+
+  <nav>
+    <a href="pedidos.html">Pedidos</a>
+    <a href="rodizio.html">Rodízio</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="galeria.html">Galeria</a>
+  </nav>
+
+  <main>
+    <p>Somos apaixonados por pizza e por criar momentos inesquecíveis. Clique nas opções acima para conhecer nossos sabores, serviços e espaço acolhedor.</p>
+  </main>
+
+</body>
+</html>

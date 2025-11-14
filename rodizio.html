@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rodízio Bella Massa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      animation: fadeInBody 1s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    header h1 {
+      font-size: 3em;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px 40px;
+      border-radius: 12px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    .intro h2 {
+      font-size: 2em;
+      color: #8b3e2f;
+    }
+
+    .intro p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 10px auto;
+    }
+
+    .destaques {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-bottom: 50px;
+      animation: fadeInUp 1.4s ease-out;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 25px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      color: #d35400;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .info {
+      background-color: #fbe5d6;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      animation: fadeInUp 1.6s ease-out;
+    }
+
+    .info h3 {
+      margin-top: 0;
+      color: #8b3e2f;
+    }
+
+    .info p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #8b3e2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      animation: fadeInUp 1.8s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .btn-voltar {
+      background-color: #b22222;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      margin: 30px auto;
+      display: block;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    .btn-voltar:hover {
+      background-color: #d43f3f;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+   
+   <!-- Logo inserido -->
+   <img src="../pizzaria/logo pizza.png" alt="Logo La Bella Pizza">
+    <h1>Rodízio de Pizzas 🍕</h1>
+  </header>
+
+  <div class="container">
+    <div class="intro">
+      <h2>Sabores ilimitados, momentos inesquecíveis</h2>
+      <p>Desfrute do nosso rodízio com mais de 20 sabores salgados e doces, servidos à vontade em um ambiente acolhedor e familiar.</p>
+    </div>
+
+    <div class="destaques">
+      <div class="card">
+        <h3>+20 Sabores</h3>
+        <p>Incluindo clássicos como calabresa, marguerita, frango com catupiry e opções vegetarianas.</p>
+      </div>
+      <div class="card">
+        <h3>Pizzas Doces</h3>
+        <p>Chocolate, banana com canela, prestígio e outras delícias para fechar com chave de ouro.</p>
+      </div>
+      <div class="card">
+        <h3>Ambiente Aconchegante</h3>
+        <p>Decoração rústica, música ambiente e atendimento caloroso para toda a família.</p>
+      </div>
+    </div>
+
+    <div class="info">
+      <h3>Horários do Rodízio</h3>
+      <p>🕕 Segunda a Sábado: 18h às 23h</p>
+      <p>💰 Valor por pessoa: R$ 49,90</p>
+      <p>📍 Rua das Massas, 123 - Curitiba</p>
+      <p>📞 Reservas: (41) 99999-0000</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Pizzaria Bella Massa — Todos os direitos reservados
+  </footer>
+
+  <a href="index.html">
+    <button class="btn-voltar">⬅️ Voltar à Página Inicial</button>
+  </a>
+
+
+  <a href="index.html">
+    <button style="
+      background-color: #b22222;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    ">
+      ⬅️ Voltar à Página Inicial
+    </button>
+  </a>
+</body>
+</html>
